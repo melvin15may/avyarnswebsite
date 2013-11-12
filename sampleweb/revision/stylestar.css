@@ -1,0 +1,37 @@
+body
+{
+		background-color:#c7ad90;
+		font-family:verdana;
+		font-style: italic;
+		font-size: small;
+		
+}
+#header{
+	background-color:#5e4638;
+
+}
+#side
+{
+	float:right;
+	background-image: url("images/background.gif");
+	text-align: center;
+	clear: 
+}
+#body
+{
+	background-image: url("images/background.gif");
+	margin: auto;
+	padding: 15px;
+	height: 500px;
+	float: left;
+
+}
+#footer{
+background-color: #c7ad90;
+color: #efe5d0;
+text-align: center;
+margin: auto;
+padding: 15px;
+border-color: aqua;
+clear: both;
+}
