@@ -3,4 +3,4 @@ avyarnswebsite
 
 Website for Avni Yarns Pvt Limited
 
-working together on a website
+Building a basic website for a company.
