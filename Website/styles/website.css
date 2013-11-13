@@ -6,4 +6,23 @@ canvas{
     right:0;
     bottom:0; 
     left:0;
+    z-index: -1;
+}
+
+.container .navbar {
+    border: 0;
+    line-height: 30px;
+    background: #FFFFFF;
+    margin-top: 100px;
+}
+
+
+.navbar .nav > li > a {
+    color: #ccc;
+    line-height: 30px;
+}
+
+.navbar .nav li.active a {
+    color: white;
+    background: #FF6C99;
 }
