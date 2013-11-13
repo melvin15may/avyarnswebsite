@@ -16,7 +16,7 @@ var systemSize = 250;
 var lots = true;
 
 var pcMode = false;
-var fadeStage = false;
+var fadeStage = true;
 var grayScale = false;
 var dx = 2;
 var dy = 4;
@@ -217,14 +217,14 @@ function setColor(targ){
 }
 
 // UI Checkbox Toggles Toggles
-function toggleFade(){
+/*function toggleFade(){
 	log("toggle fade");
 	if (fadeStage == false){
 		fadeStage = true;
 	} else {
 		fadeStage = false;
 	}
-}
+}*/
 
 function toggleColor() {
 	log("toggle color");
