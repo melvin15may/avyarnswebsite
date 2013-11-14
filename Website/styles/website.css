@@ -1,3 +1,4 @@
+/* the backgorund */
 canvas{
 	width: 100%;
 	height: 100%;
@@ -9,11 +10,12 @@ canvas{
     z-index: -1;
 }
 
+/* nav bar */
 .container .navbar {
     border: 0;
     line-height: 30px;
     background: #FFFFFF;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 
@@ -31,3 +33,17 @@ canvas{
 	padding: 0 0 0 0;
 	text-align: center;
 }
+
+/* Carousel */
+.carousel{
+	height: 300px;
+	
+}
+.item {
+	position: absolute;  
+	width: 100%; 
+	height: 300px;
+	display: block; 
+}
+
+	
