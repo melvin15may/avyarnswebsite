@@ -18,7 +18,6 @@ canvas{
     margin-top: 10px;
 }
 
-
 .navbar .nav > li > a {
     color: #ccc;
     line-height: 30px;
@@ -32,6 +31,11 @@ canvas{
 	width: 190px;
 	padding: 0 0 0 0;
 	text-align: center;
+}
+
+.dropdown-menu li a{
+	line-height: 40px;
+	color: #ccc;
 }
 
 /* Carousel */

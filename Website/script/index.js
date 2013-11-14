@@ -17,3 +17,13 @@ $(document).ready(function() {
         $('#myCarousel').carousel();
     });
 })(window.jQuery);
+
+//dropdown hover
+
+$(function(){
+    $('.dropdown').hover(function() {
+        $(this).addClass('open');
+    }, function() {
+        $(this).removeClass('open');
+    });
+});
