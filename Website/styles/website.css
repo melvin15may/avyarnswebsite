@@ -26,3 +26,8 @@ canvas{
     color: white;
     background: #FF6C99;
 }
+.col-md-3{
+	width: 190px;
+	padding: 0 0 0 0;
+	text-align: center;
+}
