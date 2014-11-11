@@ -21,6 +21,7 @@ canvas{
     float: top;
     z-index: 3;
     position: absolute;
+
 }
 
 .navbar .nav > li > a {
@@ -69,14 +70,9 @@ canvas{
 }
 
 .col-md-7{
-	border-top: 8px solid #FF6C99;
-	border-right: 8px solid #FF6C99;
 	padding: 5px 5px 5px 5px;
 }
 .col-md-4{
-
-	border-bottom: 8px solid #FF6C99;
-	border-right: 8px solid #FF6C99;
 	width: 470px;
 	padding: 0 0 0 0;
 }
