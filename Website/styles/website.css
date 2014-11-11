@@ -31,7 +31,7 @@ canvas{
 
 .navbar .nav li.active a {
     color: white;
-    background: #FF6C99;
+    background: #3090C7;
 }
 .col-md-3{
 	width: 190px;
@@ -63,7 +63,7 @@ canvas{
 }
 
 .row h1{
-	color: #FF6C99;
+	/*color: #3090C7;*/
 	text-decoration: bold;
 	margin-top: 10px;
 	margin-bottom:0;
@@ -80,7 +80,6 @@ canvas{
 p{
 	text-align: justify;
 	color: black;
-	background-color: white;
 	padding: 5px 5px 5px 5px;
 }
 
@@ -91,7 +90,7 @@ p{
 
 #heading{
     width: 100%;
-    height: 100vh;
+    height: 98vh;
     margin: 0;
     position: relative;
 }
@@ -100,6 +99,52 @@ p{
     position: absolute;
     bottom: 0;
     right: 0;
+    color: #3090C7;
     font-size: 200px;
     text-align: right;
+}
+
+section{
+    margin: 0;
+    padding: 0;
+}
+
+#about {
+    background-color: #3090C7;
+}
+
+.about-us{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.text-center{
+    padding-top: 40px;
+}
+
+.para{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.7;
+    font-weight: 400;
+    color: rgba(218,218,218,0.8);
+}
+
+.headings{
+    color: #FFF;
+    font-size: 3.5em;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+#fact{
+    background: url(../images/fact.jpg) 50% 0 fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 -50px rgba(0,0,0,0.8);
+    padding: 200px 0;
 }
