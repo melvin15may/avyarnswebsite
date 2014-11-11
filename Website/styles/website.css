@@ -113,7 +113,7 @@ section{
     background-color: #3090C7;
 }
 
-.about-us{
+.section-part{
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -146,15 +146,15 @@ section{
     width: 100%;
     position: relative;
     box-shadow: 0 0 -50px rgba(0,0,0,0.8);
-    padding: 200px 0;
+
 }
 
+/* Business Section */
+
 #business{
-    background: url(../images/1.jpg) 50% 0 fixed;
+    background-color: #309000;
     height: auto;
     margin: 0 auto;
     width: 100%;
     position: relative;
-    box-shadow: 0 0 -50px rgba(0,0,0,0.8);
-    padding: 200px 0;
 }
