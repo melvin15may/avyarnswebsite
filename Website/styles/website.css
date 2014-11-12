@@ -145,16 +145,116 @@ section{
     margin: 0 auto;
     width: 100%;
     position: relative;
-    box-shadow: 0 0 -50px rgba(0,0,0,0.8);
-
 }
 
 /* Business Section */
 
 #business{
-    background-color: #309000;
+    background-color: #3090C7;
     height: auto;
     margin: 0 auto;
     width: 100%;
     position: relative;
+}
+
+#business .headings{
+    margin-bottom: 40px;
+}
+
+#business .section-part{
+    padding-bottom: 0;
+}
+
+.polyster{
+    width: 33.33%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #fff;
+}
+
+.polyster:hover {
+    background-color: #3090C7;
+}
+
+.polyster .polyster-head h1{
+    margin-top: 30px;
+}
+
+.acrylic{
+    width: 33.33%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #fff;
+}
+
+.acrylic:hover {
+    background-color: #3090C7;
+}
+
+.acrylic .acrylic-head h1{
+    margin-top: 30px;
+}
+
+.cotton{
+    width: 33.33%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #fff;
+}
+
+.cotton:hover {
+    background-color: #3090C7;
+}
+
+.cotton .cotton-head h1{
+    margin-top: 30px;
+}
+
+.cotton-div{
+    display: none;
+}
+
+.acrylic-div{
+    display: none;
+}
+
+.polyster-div{
+    display: none;
+}
+
+#business p{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+#clients{
+    background: url(../images/fact.jpg) 50% 0 fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+#clients .col-md-4{
+    width: 33%;
+    }
+
+#clients .carousel{
+    margin-top: 30px;
+    height: 150px;
+
+}
+
+#clients .item {
+    height: 150px;
 }
