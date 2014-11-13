@@ -21,7 +21,6 @@ canvas{
     float: top;
     z-index: 3;
     position: absolute;
-
 }
 
 .navbar .nav > li > a {
@@ -128,6 +127,7 @@ section{
     line-height: 1.7;
     font-weight: 400;
     color: rgba(218,218,218,0.8);
+    text-align: center;
 }
 
 .headings{
@@ -228,7 +228,11 @@ section{
     display: none;
 }
 
-#business p{
+.business-div{
+    margin-top: 30px;
+}
+
+.business-div p{
     margin-top: 20px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -258,3 +262,4 @@ section{
 #clients .item {
     height: 150px;
 }
+
