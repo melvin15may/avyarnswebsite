@@ -53,27 +53,6 @@ $(document).ready(function(){
 }); // close out script
 
 //business section navigation
-
-$('.container-fluid > #business > .container-fluid > row > .polyster').hover(function() {
-        $(this).find('.container-fluid > #business > .container-fluid > row > .polyster > .polyster-head').hide();
-        $(this).find('.container-fluid > #business > .container-fluid > row > .polyster > .polyster-div').show();
-    }, function() {
-        $(this).find('.container-fluid > #business > .container-fluid > row > .polyster > .polyster-div').hide();
-        $(this).find('.container-fluid > #business > .container-fluid > row > .polyster > .polyster-head').show();
-});
-
-if (window.console) console.log('foo');
-
-$('.switch').hover(function() {
-    if (window.console) console.log('HOvering');
-        $(this).find('.avg_words').hide();
-        $(this).find('.avg_num').show();
-    }, function() {
-        if (window.console) console.log('HOvering');
-        $(this).find('.avg_num').hide();
-        $(this).find('.avg_words').show();
-});
-
 function polyster_mousein(){
     var x = document.getElementsByClassName("polyster-div");
     x[0].style.display = "block";
@@ -115,3 +94,32 @@ function acrylic_mouseout(){
     x = document.getElementsByClassName("acrylic-head");
     x[0].style.display = "block";
 }
+
+$(function(){
+    $(".polyster, .acrylic, .cotton").click(function() {
+        var width = $(this).parent().width();
+        var bigheight = 0.246 * width;
+        $(".img-circle").stop().animate({
+            top: 15
+        }, 1000)
+        $(this).stop().animate({
+            height: bigheight + 'px'
+        }, 1000 );
+    });
+    $(".polyster .acrylic .cotton").mouseleave(function(){
+        var t=$(this).attr('class');
+        var p=t.substring(9,t.length)+"-div";
+        console.log(p);
+        $(".img-circle").stop().animate({
+            top: "-100px"
+        }, 1000)
+        $(this).parent().children().each(function() {
+            $(this).stop().animate({
+                height: '90px'
+            }, 1000 );
+        });
+});
+});
+
+
+
