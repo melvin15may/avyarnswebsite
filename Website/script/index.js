@@ -95,6 +95,8 @@ function acrylic_mouseout(){
     x[0].style.display = "block";
 }
 
+/*
+
 $(function(){
     $(".polyster, .acrylic, .cotton").click(function() {
         var width = $(this).parent().width();
@@ -120,6 +122,23 @@ $(function(){
         });
 });
 });
-
-
-
+*/
+$(function(){
+    var PlastScroll=$(".polyster").offset().top - 400;
+    var PdivHeight=$(".polyster").height();
+    var Pscroll;
+    var AlastScroll=$(".acrylic").offset().top - 390;
+    var AdivHeight=$(".acrylic").height();
+    var Ascroll;
+    var ClastScroll=$(".cotton").offset().top - 380;
+    var CdivHeight=$(".cotton").height();
+    var Cscroll;
+    $(window).scroll(function(){
+        var Pscroll = $(this).scrollTop() - PlastScroll;
+        $(".polyster").height(PdivHeight+Pscroll);
+        var Ascroll = $(this).scrollTop() - AlastScroll;
+        $(".acrylic").height(AdivHeight+Ascroll);
+        var Cscroll = $(this).scrollTop() - ClastScroll;
+        $(".cotton").height(CdivHeight+Cscroll);
+      });
+})
