@@ -53,84 +53,16 @@ $(document).ready(function(){
 }); // close out script
 
 //business section navigation
-function polyster_mousein(){
-    var x = document.getElementsByClassName("polyster-div");
-    x[0].style.display = "block";
-    x = document.getElementsByClassName("polyster-head");
-    x[0].style.display = "none";
-}
 
-function cotton_mousein(){
-    var x = document.getElementsByClassName("cotton-div");
-    x[0].style.display = "block";
-    x = document.getElementsByClassName("cotton-head");
-    x[0].style.display = "none";
-}
-
-function acrylic_mousein(){
-    var x = document.getElementsByClassName("acrylic-div");
-    x[0].style.display = "block";
-    x = document.getElementsByClassName("acrylic-head");
-    x[0].style.display = "none";
-}
-
-function polyster_mouseout(){
-    var x = document.getElementsByClassName("polyster-div");
-    x[0].style.display = "none";
-    x = document.getElementsByClassName("polyster-head");
-    x[0].style.display = "block";
-}
-
-function cotton_mouseout(){
-    var x = document.getElementsByClassName("cotton-div");
-    x[0].style.display = "none";
-    x = document.getElementsByClassName("cotton-head");
-    x[0].style.display = "block";
-}
-
-function acrylic_mouseout(){
-    var x = document.getElementsByClassName("acrylic-div");
-    x[0].style.display = "none";
-    x = document.getElementsByClassName("acrylic-head");
-    x[0].style.display = "block";
-}
-
-/*
 
 $(function(){
-    $(".polyster, .acrylic, .cotton").click(function() {
-        var width = $(this).parent().width();
-        var bigheight = 0.246 * width;
-        $(".img-circle").stop().animate({
-            top: 15
-        }, 1000)
-        $(this).stop().animate({
-            height: bigheight + 'px'
-        }, 1000 );
-    });
-    $(".polyster .acrylic .cotton").mouseleave(function(){
-        var t=$(this).attr('class');
-        var p=t.substring(9,t.length)+"-div";
-        console.log(p);
-        $(".img-circle").stop().animate({
-            top: "-100px"
-        }, 1000)
-        $(this).parent().children().each(function() {
-            $(this).stop().animate({
-                height: '90px'
-            }, 1000 );
-        });
-});
-});
-*/
-$(function(){
-    var PlastScroll=$(".polyster").offset().top - 440;
+    var PlastScroll=$(".polyster").offset().top - 400;
     var PdivHeight=$(".polyster").height();
     var Pscroll;
-    var AlastScroll=$(".acrylic").offset().top - 430;
+    var AlastScroll=$(".acrylic").offset().top - 390;
     var AdivHeight=$(".acrylic").height();
     var Ascroll;
-    var ClastScroll=$(".cotton").offset().top - 420;
+    var ClastScroll=$(".cotton").offset().top - 400;
     var CdivHeight=$(".cotton").height();
     var Cscroll;
     $(window).scroll(function(){
@@ -142,4 +74,21 @@ $(function(){
         var Cscroll = $(this).scrollTop() - ClastScroll;
         $(".cotton").height(CdivHeight+Cscroll);
       });
+})
+
+$(function() {
+    $("#ri-grid").gridrotator( {
+        animSpeed : 500,
+        animType : "rotateBottom",
+        w320 : {
+            rows : 3,
+            columns : 4
+        },
+        w240 : {
+            rows : 3,
+            columns : 3
+        },
+        slideshow : false,
+        onhover : true
+    } );
 })
